@@ -6,6 +6,10 @@ Parameters:
     Type: String
     Default: 10.0.0.0/16
     Description: CIDR block for the VPC
+  AvailabilityZones:
+    Type: List<AWS::EC2::AvailabilityZone::Name>
+    Description: List of Availability Zones
+    Default: ["us-east-1a", "us-east-1b"]
 
 Resources:
   MyVPC:
